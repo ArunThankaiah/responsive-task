@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+.navbar{
+    width: 1280px;
+    height: 40px;
+    background: #163651;  
+}
+.contact{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+   
+   
+    
+}
+.contact-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;   
+}
+.contact-number p{
+    color: #F2EFE6;
+    padding: 10px;
+}
+.contact-number p i{
+    width: 18px;
+    height: 18px;
+    color: #40A5A2;
+    text-align: center;
+    border-radius: 2px;
+    
+    
+}
+.contact-number p span{
+    padding: 10px;
+}
+.contact-socialmedia ul{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.contact-socialmedia li{
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+}
+@media screen and (max-width: 900px) {
+    .navbar{
+        height: 80px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
