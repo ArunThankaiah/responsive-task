@@ -71,34 +71,50 @@ body{
         font-size: 12px;
     }
 }
-@media screen and (max-width: 725px) {
-    .navbar{
-        width: 100%;
-        flex-direction: column;
-        padding: 0;
-        padding-bottom: 20px;
+@media screen and (max-width: 768px) {
+    .nav-container ul{
+       margin-right: 20px;
 
     }
     .nav-container ul li{
-        display: block;
-        padding: 10px 0px;
-        text-align: center;
+       padding: 0px 2px;
+    }
+    .nav-container ul li a{
+        font-size: 12px;
     }
     .nav-icon{
-        align-self: self-start;
-        padding: 20px 0px 0px 40px;
+        margin-left: 25px;
+        padding-top: 10px;
     }
-    .nav-container ul{
-        display: none;
     }
-    .menu{
-        display: block;
-        position: absolute;
-        align-self: self-end;
-        padding: 25px 0px 0px 40px;
-        transform: 0.2s;
-    }
-    .navbar .showmenu{
-        display: block;
-    }
+    @media screen and (max-width: 576px) {
+        .navbar{
+            width: 100%;
+            flex-direction: column;
+            padding: 0;
+            padding-bottom: 20px;
+    
+        }
+        .nav-container ul li{
+            display: block;
+            padding: 10px 0px;
+            text-align: center;
+        }
+        .nav-icon{
+            align-self: self-start;
+            padding: 20px 0px 0px 40px;
+        }
+        .nav-container ul{
+            display: none;
+        }
+        .menu{
+            display: block;
+            position: absolute;
+            align-self: self-end;
+            padding: 25px 0px 0px 40px;
+            transform: 0.2s;
+        }
+        .navbar .showmenu{
+            display: block;
+        }
 }
