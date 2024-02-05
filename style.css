@@ -21,7 +21,7 @@ body{
     margin: 0px 100px;
     padding: 0px 40px;
     z-index: 100;
-    position: sticky;
+    
     
 }
 .menu{
@@ -35,7 +35,7 @@ body{
 .small-device{
     display: none;
 }
-button {
+#close-btn {
     display: none;
     text-align: center;
     color:#091520;
@@ -131,18 +131,50 @@ button i{
     height: auto;
     background: #FFF;
     border-radius: 30px;
+    
 
 }
 .right-content h2{
     text-align: center;
     margin-top: 8%;
     color: #091520;
-}
-.form{
-    margin: 20px 20px;
-    flex-direction: column;
+    padding-bottom: 10%;
 }
 
+label{
+   padding: 5px 20px;
+   font-size: 14px;
+   font-weight: 400;
+   font-style: normal;
+   color: #091520;
+}
+input{
+    margin: 5px 20px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.8);
+    border-radius: 20px;
+    padding-right: 10px;
+}
+input::placeholder{
+    padding: 10px;
+}
+.submit{
+    margin-bottom: 30%;
+}
+.input-checkbox span{
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: start;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.input-checkbox a{
+    
+    padding-left: 20px;
+}
 
 
 
