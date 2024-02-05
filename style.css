@@ -8,153 +8,169 @@
 }
 body{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    
+    overflow: hidden;
 }
-.navbar{
+.nav-content{
     width: 1280px;
-    background: #FFF;
-    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+    height: 72px;
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.8);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 9px;
-    padding-bottom: 9px;
-}
-.nav-icon{
-    margin-left: 40px;
-}
-.nav-container ul{
-    margin-right: 40px;
-}
-.nav-container ul li{
-    display: inline-block;
-    padding: 0px 10px;
-    list-style: none;  
+    margin: 0px 100px;
+    padding: 0px 40px;
     
 }
-.nav-container ul li a{
-    text-decoration: none;
-    color: #161616;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 8px 12px;
+.menu{
+    display: none;
+}
+.menu i{
+    font-size: 20px;
+    color: #091520;
+
+}
+.small-device{
+    display: none;
+}
+button {
+    display: none;
     text-align: center;
-    border-radius: 20px;
+    color:#091520;
+    border: none;
 }
-.nav-container ul li a:hover{
+button i{
+    font-size: 20px;
+}
+.small-list{
+    display: none;
+}
+.unorderlist li{
+    display: inline-block;
+    list-style: none;
+   
+}
+.unorderlist li a{
+    text-decoration: none;
+    color: #091520;
+    font-size: 15px;
+    font-weight: 400;
+    padding:10px 15px;
+}
+.unorderlist li a:hover{
     color: #fff;
-    background-color: #161616;
-}
-.menu {
-   cursor: pointer;
-   display: none;
-}
-.menu-line{
-    width: 20px;
-    height: 3px;
-    background: #161616;
-    margin: 5px 0px;
-    border-radius: 2px;
-    margin-right: 40px;
-}
-@media screen and (max-width: 992px) {
-    .nav-container ul{
-        margin-left: 20px;
-
-    }
-    .nav-container ul li{
-        padding: 0px 5px;
-    }
-    .nav-container ul li a{
-        font-size: 12px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .nav-container ul{
-       margin-right: 20px;
-
-    }
-    .nav-container ul li{
-       padding: 0px 2px;
-    }
-    .nav-container ul li a{
-        font-size: 12px;
-    }
-    .nav-icon{
-        margin-left: 25px;
-        padding-top: 10px;
-    }
-    }
-    @media screen and (max-width: 650px) {
-        .navbar{
-            width: 100%;
-            flex-direction: column;
-            padding: 0;
-            padding-bottom: 20px;
-            
+    background: #091520;
+    border-radius: 15px;
     
-        }
-        .nav-container ul li{
-            display: block;
-            padding: 10px 0px;
-            text-align: center;
-           
-        }
-        .nav-icon{
-            align-self: self-start;
-            padding: 20px 0px 0px 40px;
-        }
-        .nav-container ul{
-            display: none;
-        }
-        .menu{
-            display: block;
-            position: absolute;
-            align-self: self-end;
-            padding: 25px 0px 0px 40px;
-            transform: 0.2s;
-        }
-        .navbar .showmenu{
-            display: block;
-        }
-        }
-    @media screen and (max-width: 576px) {
-        .navbar{
-            width: 100%;
-            flex-direction: column;
-            padding: 0;
-            padding-bottom: 20px;
-            box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.08);
-        }
-        .nav-container{
-            width: 50%;
-           
-           align-self: self-end;
-           box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.08);
-        }
-        .nav-container ul li{
-            display: block;
-            padding: 10px 0px;
-            text-align: center;
-            text-align: end;
-        }
-        .nav-icon{
-            align-self: self-start;
-            padding: 20px 0px 0px 40px;
-        }
-        .nav-container ul{
-            display: none;
-        }
-        .menu{
-            display: block;
-            position: absolute;
-            align-self: self-end;
-            padding: 25px 0px 0px 40px;
-            transform: 0.2s;
-        }
-        .navbar .showmenu{
-            display: block;
-        }
+}
+/*mobile medium device 768px*/
+@media screen and (max-width: 768px) {
+    
+    .nav-content{
+        width: 100%;
+        margin: 0px;
+        z-index: 1;
+       
+    }
+    .unorderlist{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .small-device{
+        
+        width: 60%;
+        height: 100vh;
+        box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.8);
+        position: absolute;
+        right: 0px;   
+        align-items: end;
+        opacity: 0.8;
+        transition: width 2s;
+    }
+    .small-list{
+        right: 0px;
+    }
+    .small-list li{
+        display: block;
+        list-style: none;
+        margin: 20px 0px;
+        text-align: start;
+        width: 200px;
+        margin: 20px 20px;
+        
+        
+    }
+    .small-list li a{
+        text-decoration: none;
+        color: #091520;
+        font-size: 14px;
+        font-weight: 400;
+        border: 10px;
+        
+        
+    }
+    .small-list li a:hover{
+        background: black;
+        color: #fff;
+        border-radius: 15px;
+        padding: 10px 20px;
+       
+    }
+}
+/*mobile device 576px*/
+@media screen and (max-width: 576px) {
+    
+    .nav-content{
+        width: 100%;
+        margin: 0px;
+        z-index: 1;
+       
+    }
+    .unorderlist{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .small-device{
+        
+        width: 60%;
+        height: 100vh;
+        box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.8);
+        position: absolute;
+        right: 0px;   
+        align-items: end;
+        opacity: 0.8;
+        transition: width 2s;
+    }
+    .small-list{
+        right: 0px;
+    }
+    .small-list li{
+        display: block;
+        list-style: none;
+        margin: 20px 0px;
+        text-align: start;
+        width: 200px;
+        margin: 20px 20px;
+        
+        
+    }
+    .small-list li a{
+        text-decoration: none;
+        color: #091520;
+        font-size: 14px;
+        font-weight: 400;
+        border: 10px;
+        
+        
+    }
+    .small-list li a:hover{
+        background: black;
+        color: #fff;
+        border-radius: 15px;
+        padding: 10px 20px;
+       
+    }
 }
