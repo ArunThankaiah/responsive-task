@@ -9,6 +9,7 @@
 body{
     width: 100%;
     overflow: hidden;
+    
 }
 .nav-content{
     width: 1280px;
@@ -20,6 +21,7 @@ body{
     margin: 0px 100px;
     padding: 0px 40px;
     z-index: 100;
+    position: sticky;
     
 }
 .menu{
@@ -38,9 +40,11 @@ button {
     text-align: center;
     color:#091520;
     border: none;
+    
 }
 button i{
     font-size: 20px;
+    
 }
 .small-list{
     display: none;
@@ -83,7 +87,7 @@ button i{
     overflow: hidden;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 1;
+   
     
 }
 .left-content{
@@ -97,6 +101,46 @@ button i{
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+}
+.home-container p{
+    color: #fff;
+    margin-top: 2%;
+}
+.left-content a{
+    text-decoration: none;
+    color: #FFF;
+    background-color: #40A5A2;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    padding: 11px 24px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    gap: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 24px;
+    font-size: 15px;
+   
+}
+.right-content{
+    display: flex;
+    flex-direction: column;
+    width: 365px;
+    height: auto;
+    background: #FFF;
+    border-radius: 30px;
+
+}
+.right-content h2{
+    text-align: center;
+    margin-top: 8%;
+    color: #091520;
+}
+.form{
+    margin: 20px 20px;
+    flex-direction: column;
 }
 
 
@@ -136,7 +180,7 @@ button i{
     }
     .small-list{
         right: 0px;
-       
+        
        
     }
     .small-list li{
@@ -144,7 +188,8 @@ button i{
         list-style: none;
         text-align: start;
         width: 200px;
-        padding: 20px 0px;
+        margin: 20px 10px;
+        
         
         
     }
@@ -154,13 +199,14 @@ button i{
         font-weight: 400;
         border: 10px;
         color: #fff;
+
         
     }
     .small-list li a:hover{
         color: black;
         background: #fff;
         border-radius: 15px;
-        
+        padding: 10px 20px;
        
     }
     .home-container{
@@ -172,7 +218,10 @@ button i{
 
     }
     .home-container .left-content{
+        width: 100%;
         margin-top: 10%;
+        margin-right: 20px;
+       
     }
     .home-container h1{
         color: #FFF;
@@ -180,6 +229,25 @@ button i{
         font-style: normal;
         font-weight: 700;
         line-height: 120%;
+    }
+    .home-container p{
+        font-size: 12px;
+        font-size: 400;
+    }
+    .left-content .getstart{
+        width: 300px;
+        background: #40A5A2;
+        color: white;
+
+    }
+    .right-content{
+        
+        display: flex;
+        flex-direction: column;
+        width: 365px;
+        height: auto;
+        margin-bottom: 80%;
+        
     }
 }
 /*mobile device 576px*/
@@ -210,6 +278,7 @@ button i{
     }
     .small-list{
         right: 0px;
+        margin: 20px 10px;
     }
     .small-list li{
         display: block;
@@ -226,7 +295,7 @@ button i{
         font-weight: 400;
         border: 10px;
         color: #fff;
-        
+        padding: 10px 20px;
         
     }
     .small-list li a:hover{
@@ -245,8 +314,9 @@ button i{
 
     }
     .home-container .left-content{
+        width: 100%;
         margin-top: 10%;
-        margin-left: 40px;
+        margin-right: 20px;
     }
     .home-container h1{
         color: #FFF;
@@ -254,5 +324,18 @@ button i{
         font-style: normal;
         font-weight: 700;
         line-height: 120%;
+    }
+    .home-container p{
+        font-size: 12px;
+        font-size: 400;
+    }
+    .right-content{
+        
+        display: flex;
+        flex-direction: column;
+        width: 365px;
+        height: auto;
+        margin-bottom: 80%;
+        
     }
 }
