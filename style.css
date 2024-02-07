@@ -124,6 +124,7 @@ button i{
 /*Form*/
 .form{
     margin-top: 130px;
+    width: 365px;
     height: 491px;
     margin-right: 40px;
     background: #fff;
@@ -133,10 +134,21 @@ button i{
 
 }
 .form h2{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600px;
     line-height: 37.5px;
     color: #02274C;
+    text-align: center;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    padding:0px 35px;
+    padding-top: 10%;
+
+}
+.checkbox{
+    display: block;
 }
 
 
@@ -207,7 +219,8 @@ button i{
 
     /*Home */
     .home{
-        width: 100%;
+        width: 372px;
+        height: 800px;
         margin: 0;
         padding: 0;
         flex-direction: column;
@@ -217,8 +230,8 @@ button i{
         
     }
     .home .content{
-        width: 100%;
-        height: auto;
+        width: 372px;
+        
         margin-top: 20%;
         margin-left: 30px;
     }
@@ -232,8 +245,6 @@ button i{
     .home .content p{
     
         width: 300px;
-        margin-bottom: 2%;
-        margin-top: 3%;
         font-size: 12px;
         font-weight: 300;
         line-height: normal;
@@ -242,10 +253,10 @@ button i{
     /*From*/
     .form{
         width: 300px;
-        height: 600px;
+        height: 300px;
         margin-top: 10%;
         margin-left: 35px;
-        margin-bottom: 10%;
+        
 
     }
     .form h2{
@@ -321,21 +332,24 @@ button i{
 
     /*Home */
     .home{
-        width: 100%;
+        width: 372px;
+        height: 800px;
         margin: 0;
         padding: 0;
         flex-direction: column;
+        justify-content: space-evenly;
         background-position: center;
-        background-clip: calc(flex);
+        
        
         
         
     }
     .home .content{
-        width: 100%;
-        height: auto;
+        width: 372px;
+        height: 300px;
         margin-top: 20%;
         margin-left: 30px;
+        margin-right: 30px;
     }
     .home .content h1{
         width: 300px;
@@ -346,20 +360,19 @@ button i{
     }
     .home .content p{
         width: 300px;
-        margin-bottom: 2%;
-        margin-top: 3%;
         font-size: 12px;
         font-weight: 300;
         line-height: normal;
-       ;
+        padding: 10px;
+        margin: 0px;
+       
 
     }
     .form{
         width: 300px;
-        height: 600px;
-        margin-top: 10%;
+        height: 300px;
         margin-left: 35px;
-        margin-bottom: 10%;
+        
 
     }
     .form h2{
@@ -367,6 +380,10 @@ button i{
         font-size: 16px;
         text-align: center;
         padding: 0px 20px;
+    }
+    .form div{
+       
+        padding: 5px 30px;
     }
 
     
