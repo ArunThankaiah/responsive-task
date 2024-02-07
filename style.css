@@ -69,7 +69,7 @@ button i{
     
 }
 /*Home */
-
+/*Content*/
 .home{
     width: 1280px;
     height: 100vh;
@@ -120,6 +120,23 @@ button i{
     display: flex;
     gap: 10px;
     justify-content: center;
+}
+/*Form*/
+.form{
+    margin-top: 130px;
+    height: 491px;
+    margin-right: 40px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px;
+    
+
+}
+.form h2{
+    font-size: 25px;
+    font-weight: 600px;
+    line-height: 37.5px;
+    color: #02274C;
 }
 
 
@@ -195,7 +212,7 @@ button i{
         padding: 0;
         flex-direction: column;
         background-position: left;
-        overflow: hidden;
+        
         
         
     }
@@ -220,6 +237,14 @@ button i{
         font-size: 12px;
         font-weight: 300;
         line-height: normal;
+
+    }
+    /*From*/
+    .form{
+        width: 300px;
+        height: 600px;
+        margin-top: 10%;
+        margin-left: 35px;
 
     }
     
@@ -295,7 +320,7 @@ button i{
         flex-direction: column;
         background-position: center;
         background-clip: calc(flex);
-        overflow: hidden;
+       
         
         
     }
