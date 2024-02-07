@@ -104,6 +104,23 @@ button i{
     line-height: 24px;
     font-weight: 400;
 }
+.getstarted{
+    
+    height: 40px;
+    font-size: 14px;
+    line-height: 19.6px;
+    text-align: center;
+    color: #FFF;
+    border-radius: 20px;
+    margin-top: 3%;
+    background-color: #40A5A2;
+    border: none;
+    padding: 11px 24px;
+    font-weight: 100;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
 
 
 
@@ -177,7 +194,7 @@ button i{
         margin: 0;
         padding: 0;
         flex-direction: column;
-        background-position: center;
+        background-position: left;
         overflow: hidden;
         
         
@@ -196,12 +213,12 @@ button i{
 
     }
     .home .content p{
-        width: 350px;
-        margin: 0;
-        padding-right: 25px;
+    
+        width: 300px;
+        margin-bottom: 2%;
         margin-top: 3%;
         font-size: 12px;
-        font-weight: 500;
+        font-weight: 300;
         line-height: normal;
 
     }
@@ -277,6 +294,7 @@ button i{
         padding: 0;
         flex-direction: column;
         background-position: center;
+        background-clip: calc(flex);
         overflow: hidden;
         
         
@@ -295,13 +313,13 @@ button i{
 
     }
     .home .content p{
-        width: 350px;
-        margin: 0;
-        padding-right: 25px;
+        width: 300px;
+        margin-bottom: 2%;
         margin-top: 3%;
         font-size: 12px;
-        font-weight: 500;
+        font-weight: 300;
         line-height: normal;
+       ;
 
     }
 
