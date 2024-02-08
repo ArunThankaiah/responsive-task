@@ -75,16 +75,15 @@ button i{
     height: 100vh;
     display: flex;
     margin: 0px 120px;
-    justify-content: space-between;
+    justify-content: space-around;
     background: linear-gradient(0deg, rgba(9, 21, 32, 0.75) 0%, rgba(9, 21, 32, 0.75) 100%), url(https://s3-alpha-sig.figma.com/img/1ddc/436b/6b3dff1d785de0fec8290c62135ab0b1?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZD1SQo6YfE9HqaAAWrn9N~3bCvqa-5eYjp~8A5N5DKuN9UiwZbe4cTwBIaEsroH1EYyLg4Qn2-IWQFXDTQrhA8RN8Z72LBEGtBH0mdKjhy3OuF14vUgw05eMprfmAGXDca35GzYFMzXr-3i9ly18pn8GWWYR4rPM6ZOL1fLLnS9MaV1~g52SugIsMEHsReyY298l68~APmRfp2H69mqnZdQGlpLgbblYGlU~c9fYrt2Yjy23opa6CeTQU-WYo9Ji3qUGQSTTko2YUB9o~TtP94kHT90Mbc~y-lKVneQeW8bwNmE2uGPkManHF-6pEGO71lJq49q5NDEMVDfKOsp~5A__), lightgray -0.794px -98.025px / 118.966% 154.728% no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: center;
     
     
 }
 .home .content{
     width: 560px;
-    height: 302px;
     margin-top: 290px;
     margin-left: 40px;
     
@@ -220,18 +219,17 @@ form div{
     /*Home */
     .home{
         width: 372px;
-        height: 800px;
         margin: 0;
         padding: 0;
         flex-direction: column;
-        background-position: left;
+        overflow: hidden;
+
         
         
         
     }
     .home .content{
         width: 372px;
-        
         margin-top: 20%;
         margin-left: 30px;
     }
@@ -333,12 +331,10 @@ form div{
     /*Home */
     .home{
         width: 372px;
-        height: 800px;
         margin: 0;
         padding: 0;
         flex-direction: column;
-        justify-content: space-evenly;
-        background-position: center;
+        overflow: hidden;
         
        
         
@@ -346,7 +342,6 @@ form div{
     }
     .home .content{
         width: 372px;
-        height: 300px;
         margin-top: 20%;
         margin-left: 30px;
         margin-right: 30px;
