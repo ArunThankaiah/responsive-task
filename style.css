@@ -149,26 +149,112 @@
 .form-contnet{
     display: flex;
     flex-direction: column;
-    padding: 20px 40px;
+   
     
     
 }
 .form-contnet label{
-    margin-top: 10px;
-    padding-top: 10px;
+    
+    padding: 10px 40px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 700;
     color: #091520;
 
 }
 .form-contnet input{
+    margin: 0px 40px;
     padding: 8px;
     border-radius: 16px;
     border: 0.3px solid #091520;
     
 }
-.terms{
+
+.btn{
+    width: 104px;
+    height: 40px;
+    background: #02274C;
+    margin:20px 40px;
+    color: #FFFFFF;
+    border-radius: 24px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    gap: 10px;
+}
+.btn i{
+    
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+/* Footer content */
+.footer{
+    width: 1280px;
+    height: 390px;
+    margin: 0px auto;
+    padding: 0px 40px;
     display: flex;
-    justify-content: start;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background:  #F0F9F9; 
+}
+.start-up{
+    margin-right: 20px;
+    
+}
+.risk{
+    margin-left: 20px;
+    
+}
+.finance{
+    margin-left: 20px;
+    
+}
+.img-start{
+    width: 64px;
+    height: 64px;
+    background: #40A5A2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.img-finance{
+    width: 64px;
+    height: 64px;
+    background: #40A5A2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.img-risk{
+    width: 64px;
+    height: 64px;
+    background: #40A5A2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.footer h6{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color:#163651;
+
+}
+.footer .footer-para{
+    font-size: 14px;
+    font-size: 400;
+    line-height: 24px;
+    padding-right: 20px;
 }
